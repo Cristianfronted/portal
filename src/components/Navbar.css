@@ -1,0 +1,194 @@
+/* Estilos generales */
+.navbar {
+  position: fixed;
+  z-index: 10;
+}
+
+/* Botón circular de menú (solo para móvil) */
+.menu-toggle {
+  display: none; /* Escondido por defecto */
+  width: 50px;
+  height: 50px;
+  background-color: #ff7f7f; /* Fondo rojo claro */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.4);
+  transition: all 0.3s ease;
+}
+
+.menu-toggle.open {
+  background-color: #ff4d4d; /* Color al abrir */
+}
+
+.nav-buttons {
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  display: flex; /* Visible por defecto en escritorio */
+  flex-direction: column;
+  gap: 15px;
+}
+
+.nav-buttons li {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff7f7f; /* Fondo rojo claro */
+  border-radius: 50%;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-buttons li:hover {
+  transform: scale(1.2);
+  box-shadow: 0 6px 15px rgba(255, 255, 255, 0.6);
+}
+
+.nav-buttons li.active {
+  background-color: #ff4d4d; /* Color más fuerte para activo */
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.8);
+}
+
+/* Botón personalizado con imagen */
+.custom-button {
+  width: 50px;
+  height: 50px;
+  background-color: #3e3f41; /* Fondo blanco */
+  border: 2px solid #e42f1c; /* Borde rojo */
+  border-radius: 50%; /* Botón circular */
+  background-size: contain; /* La imagen se ajusta al botón */
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.custom-button:hover {
+  transform: scale(1.4); /* Agranda el botón al hacer hover */
+  box-shadow: 0 6px 15px rgba(228, 47, 28, 0.8);
+}
+
+.nav-buttons {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0;
+}
+
+.nav-buttons li {
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-buttons li:hover {
+  color: #e42f1c;
+}
+
+.nav-buttons .active {
+  color: #e42f1c;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro semitransparente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  position: relative;
+
+  border: 5px solid #e42f1c; /* Borde rojo */
+  box-shadow: 0 10px 30px #e42f1c; /* Sombra */
+  max-width: 600px;
+  width: 90%;
+  text-align: center;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #e42f1c;
+  border: none;
+  color: #fff;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.modal-close:hover {
+  background-color: #b71c14;
+}
+
+.modal-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: 90vh; /* Limita la altura */
+  margin: 0 auto;
+}
+
+
+/* Estilos para móviles */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex; /* Mostrar el botón circular solo en móviles */
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: #ff4d4d;
+  }
+
+  .nav-buttons {
+    display: none; /* Ocultar el menú por defecto */
+    position: absolute;
+    top: 60px; /* Ajusta para que salga debajo del botón */
+    left: 10px; /* Alinea con el botón */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    animation: slideDown 0.3s ease-out;
+    margin-top: 10px;
+  }
+
+  .nav-buttons.visible {
+    display: flex; /* Mostrar el menú al abrir */
+  }
+}
+
+/* Estilos para escritorio */
+@media (min-width: 769px) {
+  .menu-toggle {
+    display: none; /* Esconde el botón circular en pantallas grandes */
+  }
+
+  .nav-buttons {
+    display: flex; /* Mantén el menú siempre visible en escritorio */
+    position: fixed;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    flex-direction: column;
+    gap: 50px;
+  }
+}

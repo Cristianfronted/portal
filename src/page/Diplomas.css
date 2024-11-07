@@ -1,0 +1,81 @@
+.diplomas-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Ocupa toda la altura de la página */
+    background-color: #243037; /* Color de respaldo */
+    background-image: url("../assets/background.jpg"); /* Usa la imagen de fondo del proyecto */
+    background-size: cover; /* La imagen cubre todo el fondo */
+    background-position: center; /* Centra la imagen */
+    color: white; /* Texto blanco */
+  }
+  
+  .diplomas-title {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #e42f1c; /* Color del título */
+    text-align: center;
+  }
+  
+  .diplomas-section {
+    display: flex;
+    width: 800px;
+    height: 430px;
+    border: solid 3px #e42f1c;
+    box-shadow: 0 6px 10px #e42f1c;
+
+  }
+  
+
+.diplomas-section {
+    display: flex;
+    width: 900px;
+    height: 430px;
+  }
+
+.diploma-image{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+  
+.diploma-image:hover{
+    cursor: crosshair;
+    width: 60%;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+/* Estilo para versión móvil */
+@media (max-width: 768px) {
+    .diplomas-section {
+        flex-direction: column; /* Las imágenes se colocan una debajo de la otra */
+        width: 80%; /* Ocupa todo el ancho disponible */
+        height: auto; /* Ajusta la altura automáticamente */
+        border: none;
+        box-shadow: none;
+    }
+
+    .diploma-image {
+        width: 100%; /* Cada imagen ocupa el ancho completo */
+        flex-grow: 0; /* Desactiva el crecimiento flexible */
+        opacity: 1; /* Elimina la opacidad */
+        transition: none; /* Elimina la transición */
+        margin-bottom: 10px; /* Espacio entre imágenes */
+    }
+
+    .diploma-image:hover {
+        cursor: default; /* Cambia el cursor al valor predeterminado */
+        filter: none; /* Elimina el filtro de contraste */
+    }
+    .diplomas-title {
+        font-size: 2rem;
+        margin-bottom: 40px;
+        margin-top: 80px;
+        color: #e42f1c; /* Color del título */
+        text-align: center;
+      }
+}

@@ -1,0 +1,143 @@
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Cambia esto si necesitas ajustar el contenido */
+  padding: 50px 20px;
+  background-color: #243037;
+  color: white;
+  background-image: url("../assets/background.jpg");
+  background-size: cover;
+  background-position: center;
+  height: auto; /* Permite que se ajuste según el contenido */
+  overflow-y: auto; /* Habilita el scroll si es necesario */
+}
+
+.skills-title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #e42f1c;
+  font-weight: bold;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Cuatro tarjetas por fila */
+  grid-auto-rows: auto; /* Asegura que las filas se ajusten a la altura del contenido */
+  gap: 20px; /* Espaciado entre tarjetas */
+  width: 90%; /* Ancho ajustado */
+  max-width: 1200px; /* Ancho máximo del contenedor */
+  margin-top: 20px; /* Espacio entre el título y las tarjetas */
+  justify-content: center; /* Centra el grid */
+}
+
+.skill-card {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  perspective: 1000px; /* Habilita la perspectiva 3D */
+  margin: 0 auto;
+}
+
+.skill-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s ease;
+  transform-style: preserve-3d; /* Asegura que ambas caras se rendericen */
+}
+
+.skill-card.flipped .skill-card-inner {
+  transform: rotateY(180deg); /* Volteo solo al hacer clic */
+}
+
+.skill-card-front,
+.skill-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* Oculta el lado trasero cuando no está visible */
+}
+
+.skill-card-front {
+  background-image: url("../assets/boton.png"); /* Imagen del botón */
+  background-color: #3e3f41;
+  background-size: 50%; /* Ajusta el tamaño de la imagen (50% del contenedor) */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que se repita */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: #e42f1c 2px solid;
+  box-shadow: 0 4px 8px #e42f1c;
+}
+
+
+.skill-card-back {
+  background-color: #3e3f41; /* Fondo de la tarjeta trasera */
+  border: #e42f1c 2px solid;
+  transform: rotateY(180deg); /* Posición inicial de la parte trasera */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-card-back img {
+  width: 60px; /* Tamaño reducido del icono trasero */
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+.skill-card-back h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.skill-card-back p {
+  font-size: 1rem;
+  color: #cccccc;
+  text-align: center;
+}
+.skill{
+  color: white;
+}
+
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .skills-container {
+    grid-template-columns: repeat(2, 1fr); /* Dos tarjetas por fila en dispositivos pequeños */
+    gap: 20px;
+  }
+
+  .skill-card {
+    height: 200px; /* Ajusta la altura en móviles */
+  }
+
+  .skill-card-front {
+    background-size: 50%; /* Imagen más pequeña en móviles */
+  }
+
+  .skill-card-back img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .skill-card-back h3 {
+    font-size: 1rem;
+  }
+
+  .skill-card-back p {
+    font-size: 0.8rem;
+  }
+  .skills-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #e42f1c;
+    font-weight: bold;
+  }
+}

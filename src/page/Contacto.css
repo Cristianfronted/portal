@@ -1,0 +1,154 @@
+.contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px;
+  background-color: #243037;
+  background-image: url("../assets/background.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  color: white;
+}
+
+.contacto-title {
+  font-size: 3rem;
+  color: #e42f1c;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.contacto-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+  width: 70%;
+  max-width: 1200px;
+}
+
+.contacto-info {
+  flex: 1;
+  background-color: #2c2f33;
+  padding: 20px;
+  box-shadow: 0 4px 8px #e42f1c;
+  border: 2px solid #e42f1c;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 0.9rem;
+}
+
+.contacto-info h2 {
+  font-size: 1.5rem;
+  color: #e42f1c;
+  margin-bottom: 15px;
+}
+
+.contacto-info .info-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.contacto-info .info-item img {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+}
+
+.contacto-info .info-item p {
+  margin: 0;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.contacto-form {
+  flex: 1;
+  background-color: #2c2f33;
+  padding: 20px;
+  box-shadow: 0 4px 8px #e42f1c;
+  border: 2px solid #e42f1c;
+}
+
+.contacto-form .form-group {
+  margin-bottom: 15px;
+}
+
+.contacto-form label {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.contacto-form input,
+.contacto-form textarea {
+  width: 95%;
+  padding: 10px;
+  border: 2px solid #e42f1c;
+  border-radius: 5px;
+  background-color: #1f2225;
+  color: white;
+  font-size: 1rem;
+  outline: none;
+}
+
+.contacto-form textarea {
+  resize: none;
+}
+
+.contacto-form button {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #e42f1c;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contacto-form button:hover {
+  background-color: #b71c14;
+}
+
+.contacto-text {
+  color: white;
+}
+
+.contacto-text-2 {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .contacto-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contacto-info,
+  .contacto-form {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .contacto-title {
+    font-size: 2rem;
+  }
+  .contacto-form input,
+.contacto-form textarea {
+  width: 90%;
+  padding: 10px;
+  border: 2px solid #e42f1c;
+  border-radius: 5px;
+  background-color: #1f2225;
+  color: white;
+  font-size: 1rem;
+  outline: none;
+}
+}

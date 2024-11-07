@@ -1,0 +1,143 @@
+.carousel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Cambia esto si necesitas ajustar el contenido */
+  padding: 70px 20px;
+  background-color: #243037;
+  color: white;
+  background-image: url("../assets/background.jpg");
+  background-size: cover;
+  background-position: center;
+  height: auto; /* Permite que se ajuste según el contenido */
+  overflow-y: auto; /* Habilita el scroll si es necesario */
+}
+
+.proyectos-title {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.proyectos-title .pro {
+  color: #e42f1c;
+}
+
+.carousel-wrapper {
+  display: flex;
+  align-items: center; /* Centra verticalmente el carrusel */
+  justify-content: center; /* Centra horizontalmente el carrusel */
+  width: 100%;
+  max-width: 1200px; /* Limita el ancho máximo del carrusel */
+  overflow: hidden; /* Esconde las tarjetas que están fuera de la vista */
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out; /* Transición suave */
+}
+
+.proyecto-card {
+  background-color: #3f4041;
+  box-shadow: 0 4px 8px #e42f1c;
+  padding: 15px;
+  width: 300px;
+  text-align: center;
+  border: #e42f1c 2px solid;
+  flex-shrink: 0;
+  min-height: 450px; /* Altura uniforme */
+  margin: 0 10px;
+}
+
+.proyecto-video {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.proyecto-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  margin: 10px 0;
+}
+
+.proyecto-description {
+  font-size: 1rem;
+  line-height: 20px;
+  color: #cccccc;
+}
+
+/* Botones */
+.nav-button {
+  font-size: 2rem;
+  background-color: transparent;
+  color: #e42f1c;
+  cursor: pointer;
+  border: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1; /* Asegura que los botones estén visibles */
+}
+
+.nav-button.left {
+  margin-right: 20px;
+  width: 100px;
+}
+
+.nav-button.right {
+  margin-left: 20px;
+  width: 100px;
+
+}
+
+.nav-button:hover {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .carousel-wrapper {
+    justify-content: center;
+    overflow: hidden; /* Oculta las tarjetas fuera del área visible */
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+  }
+
+  .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%; /* Asegura que ocupa el ancho del contenedor */
+  }
+
+  .proyecto-card {
+    width: 90%; /* Ajusta la tarjeta al 90% del ancho del contenedor */
+    margin: 0 auto; /* Centra la tarjeta */
+    max-width: 400px; /* Evita que sea demasiado ancha */
+  }
+
+  .proyectos-title {
+    font-size: 2rem; /* Reduce el tamaño del título en móvil */
+    text-align: center; /* Centra el título */
+  }
+
+  .nav-button {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 50%; /* Alinea los botones verticalmente */
+    transform: translateY(-50%);
+    z-index: 2; /* Asegura que estén encima de las tarjetas */
+  }
+
+  .nav-button.left {
+    left: 10px; /* Botón izquierdo cerca del borde */
+  }
+
+  .nav-button.right {
+    right: 10px; /* Botón derecho cerca del borde */
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/Cristianfronted/portal.git/build/static/css/main.db88d023.css",
+    "main.js": "/Cristianfronted/portal.git/build/static/js/main.074acc56.js",
+    "static/media/gym.mp4": "/Cristianfronted/portal.git/build/static/media/gym.5f1a8a3cc43bc22e561c.mp4",
+    "static/media/Mares de popa.mp4": "/Cristianfronted/portal.git/build/static/media/Mares de popa.2f7132cb40fbd5ec2f1b.mp4",
+    "static/media/farinia.mp4": "/Cristianfronted/portal.git/build/static/media/farinia.9f68865cd79d41b77c39.mp4",
+    "static/media/Ten.mp4": "/Cristianfronted/portal.git/build/static/media/Ten.9d3452bfb3e4d366b75e.mp4",
+    "static/media/peluquero.mp4": "/Cristianfronted/portal.git/build/static/media/peluquero.0d12ab41fcd87978b4d9.mp4",
+    "static/media/background.jpg": "/Cristianfronted/portal.git/build/static/media/background.efcaf6028d83cfab7fbe.jpg",
+    "static/media/react94.png": "/Cristianfronted/portal.git/build/static/media/react94.aa826ca1e4104f70684e.png",
+    "static/media/cv-foto.png": "/Cristianfronted/portal.git/build/static/media/cv-foto.ca3d3a60f467fbf26ae4.png",
+    "static/media/oo.jpg": "/Cristianfronted/portal.git/build/static/media/oo.2a0dcc8623991f754dd3.jpg",
+    "static/media/oooooooooooo.jpg": "/Cristianfronted/portal.git/build/static/media/oooooooooooo.7bfecbc2480883c89474.jpg",
+    "static/media/ooooo.jpg": "/Cristianfronted/portal.git/build/static/media/ooooo.2098418b7f1f8ab1cf0a.jpg",
+    "static/media/react.png": "/Cristianfronted/portal.git/build/static/media/react.9a10aa2b19e6d6fcb705.png",
+    "static/media/door2.webp": "/Cristianfronted/portal.git/build/static/media/door2.b742e0389c4ad479cf85.webp",
+    "static/media/mysql.png": "/Cristianfronted/portal.git/build/static/media/mysql.025407a309759cc2b769.png",
+    "static/media/door1.webp": "/Cristianfronted/portal.git/build/static/media/door1.7589a7818a8608bbf05a.webp",
+    "static/media/logo-principal-trans.png": "/Cristianfronted/portal.git/build/static/media/logo-principal-trans.631c0b74802c976bfe4b.png",
+    "static/media/ooo.jpg": "/Cristianfronted/portal.git/build/static/media/ooo.dc67d5f4a6e79e34dbb2.jpg",
+    "static/media/php.png": "/Cristianfronted/portal.git/build/static/media/php.69467299b6b342d93c5f.png",
+    "static/media/boton.png": "/Cristianfronted/portal.git/build/static/media/boton.c16cde0d06a83823002d.png",
+    "static/media/navegatel.png": "/Cristianfronted/portal.git/build/static/media/navegatel.f305a7f6c6cdf2fdaac8.png",
+    "static/media/ceac.jpg": "/Cristianfronted/portal.git/build/static/media/ceac.9a609e0464997923c0ce.jpg",
+    "static/media/elementor.png": "/Cristianfronted/portal.git/build/static/media/elementor.52fc8d63ece30afdb34a.png",
+    "static/media/wordpress.png": "/Cristianfronted/portal.git/build/static/media/wordpress.c36984679c4b5e86efdb.png",
+    "static/media/unnamed.webp": "/Cristianfronted/portal.git/build/static/media/unnamed.2a03a3f927a4ac56017f.webp",
+    "index.html": "/Cristianfronted/portal.git/build/index.html",
+    "main.db88d023.css.map": "/Cristianfronted/portal.git/build/static/css/main.db88d023.css.map",
+    "main.074acc56.js.map": "/Cristianfronted/portal.git/build/static/js/main.074acc56.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.db88d023.css",
+    "static/js/main.074acc56.js"
+  ]
+}
